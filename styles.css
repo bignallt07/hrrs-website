@@ -1,0 +1,302 @@
+/* Color Palette 
+    green: rgb(0,180,199);
+    lightgrey: rgb(180,180,180);
+    darkgrey: rgb(100,99,99);
+    black: rgb(0,0,0);
+    text: rgb(135, 135, 135);
+*/
+
+/* Styles */
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(0,180,199);
+    font-family: 'Signika', sans-serif;
+}
+
+/* NavBar */
+
+
+/* Header */
+#home-header {
+    background-image: url('img/header.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#home-header .row {
+    margin: 0;
+}
+
+#header-content {
+    margin: auto;
+    text-align: center;
+}
+
+#header-buttons {
+    margin: auto;
+}
+
+/* Intro Section */
+#intro {
+    /* background-color:hsl(0, 0%, 89%); */
+    background-color: rgb(243, 246, 247);
+}
+
+#intro [class*="col-"] {
+    padding: 3% 8%;
+}
+
+#intro img {
+    margin: auto;
+    width: 100%;
+}
+
+/* Candidate Section */
+#candidate {
+    text-align: center;
+    margin: 3% 0;
+}
+
+#candidate h1 {
+    padding: 10px;
+    background-color: rgb(0,180,199);
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* CANDIDATE FIGURES */
+
+[class*="hvr-"] { /* short cut to allow all classes that have this at start */
+    float: left;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+/*soft overlay*/
+.overlay {
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ width: 100%;
+ opacity: 0; /* Add the next two after hover set up - 1. Makes it disappear */
+ transition: .5s ease;  /*transition*/
+ background-color: rgb(0,180,199);
+ padding: 15% 10%;
+ text-align: center;
+}
+
+.overlay h1 {
+    color: white;
+} 
+
+.overlay p {
+  color: white;
+  font-size: 15px;
+}
+.hvr-overlay:hover .overlay{
+    opacity: 1;
+}
+
+.hvr-overlay img {
+    width: 100%;
+    background-color: rgb(0, 179, 199);
+    /* opacity: 0.8; */
+}
+
+/* Jobs */
+#jobs {
+    background-color: #00b3c7c5;
+    color: rgb(255, 255, 255);
+    padding: 2% 0;
+}
+
+#jobs h2 {
+    color: white;
+    font-weight: bold;
+}
+
+.job-img {
+    padding-right: 10%;
+    float: right;
+}
+
+.jobs-content {
+    padding-left: 10%;
+}
+
+/* Testimonials */
+#testimonials {
+    background-color: rgb(100,99,99);
+    padding: 10px;
+}
+
+#testimonials h2 {
+    margin-top: 2%;
+    text-align: center;
+}
+
+#testimonials h3 {
+    float: right;
+}
+
+#testimonials p {
+    color: white;
+}
+
+#testimonials .col-3 {
+    text-align: center;
+}
+
+.carousel-item {
+    padding: 80px;
+    background-color: rgb(100,99,99);
+}
+
+/* footer */
+footer {
+    background-color: rgb(0,180,199);
+    padding: 50px 10px 10px 10px;
+}
+
+footer i {
+    font-size: 30px;
+    color: white;
+}
+
+footer h3, footer h4 {
+    color: white;
+}
+
+#footer-copy {
+    text-align: right;
+    color: white;
+    background-color: #00b3c7a2;;
+    margin: 30px 0 0 0;
+}
+
+footer img {
+    width: 25%;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin: 5%;
+}
+
+#site-map a {
+    display: block;
+    color: rgb(0, 0, 0);
+}
+
+/* JOBS */
+
+.card h2 {
+    color: black;
+}
+
+.btn-link:hover {
+    text-decoration: none;
+}
+
+.card:hover {
+    color: red;
+}
+
+.card p {
+    color: rgb(56, 56, 56);
+}
+
+/* SUBPAGES */
+
+.sub-headers {
+    background-color: rgb(0,180,199);
+    height: 300px;
+}
+
+.sub-headers h1 {
+    color: white;
+    font-size: 4em;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.sub-headers nav {
+    box-shadow: 0 4px 10px -6px #505050;
+}
+
+.sub-main {
+    padding: 20px;
+}
+
+#sub-intro {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* ABOUT PAGE */
+.about-main {
+    padding: 5%;
+    text-align: center;
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.about-main h2, .about-main h3 {
+    color: white;
+}
+
+.about-main .container {
+    background-color: rgb(0, 179, 199);
+    padding: 0 10px;
+}
+
+.about-main .col-6 {
+    padding: 0;
+}
+
+.about-main p {
+    color: #ffffff;
+}
+
+.block {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+#block-1 {
+    background-image: url('img/stock/stock1.jpg');
+}
+
+#block-2 {
+    background-image: url('img/stock/stock3.jpg');
+}
+
+#block-3 {
+    background-image: url('img/stock/stock2.jpg');
+}
+
+#block-4 {
+    background-image: url('img/stock/stock7.jpg');
+}
+
+
+.about-content {
+    padding: 10%;
+    margin: 0;
+}
+
+.about-main img {
+    width: 100%;
+}
+
+td svg {
+    margin: 40px;
+}
+
+
+
