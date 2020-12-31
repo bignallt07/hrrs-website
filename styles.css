@@ -14,12 +14,51 @@ h1, h2, h3, h4, h5, h6 {
 
 /* NavBar */
 
+/* NEW HEADER - DELETE LATER */
+#home-header2 {
+    background-image: url('img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+}
+
+#home-header2 .row {
+    margin: 0;
+}
+
+#role-btn {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    background-color: white;
+    color:rgb(0, 180, 199);
+    padding: 1%;
+}
+
+#hiring-btn {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    background-color: white;
+    color:rgb(0, 180, 199);
+    padding: 1%;
+}
+
+#hiring-btn:hover, #role-btn:hover {
+    color: white;
+    background-color:rgb(0, 180, 199);
+    border: 1px solid white;
+}
+
+
 
 /* Header */
 #home-header {
     background-image: url('img/header.jpg');
     background-size: cover;
     background-position: center;
+    padding: 4% 4% 1.5% 4%
 }
 
 #home-header .row {
@@ -29,6 +68,10 @@ h1, h2, h3, h4, h5, h6 {
 #header-content {
     margin: auto;
     text-align: center;
+}
+
+#header-content img {
+    width: 35%;
 }
 
 #header-buttons {
