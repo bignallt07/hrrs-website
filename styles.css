@@ -137,17 +137,17 @@ nav img {
 
 /* Testimonials */
 #testimonials {
-    background-color: rgb(100,99,99);
+    background-color: rgb(180, 180, 180);
     padding: 10px;
 }
 
 #testimonials h2 {
     margin-top: 2%;
-    text-align: center;
 }
 
-#testimonials h3 {
-    float: right;
+#testimonials h2, #testimonials h4 {
+    color: white;
+    text-align: center;
 }
 
 #testimonials p {
@@ -158,19 +158,28 @@ nav img {
     text-align: center;
 }
 
+#testimonials i {
+    font-size: 3em;
+}
+
 .carousel-item {
     padding: 80px;
-    background-color: rgb(100,99,99);
+    background-color: rgb(180, 180, 180);
 }
 
 /* footer */
 footer {
     background-color: rgb(0,180,199);
     padding: 50px 10px 10px 10px;
+    color: white;
 }
 
 footer i {
     font-size: 30px;
+    color: white;
+}
+
+footer a {
     color: white;
 }
 
@@ -193,9 +202,12 @@ footer img {
     margin: 5%;
 }
 
+.footer_contact {
+    margin-bottom: 10px;
+}
+
 #site-map a {
     display: block;
-    color: rgb(0, 0, 0);
 }
 
 /* JOBS */
@@ -294,7 +306,7 @@ footer img {
 
 .about-content {
     padding: 10%;
-    margin: 0;
+    margin: 10% auto;
 }
 
 .about-main img {
@@ -306,4 +318,87 @@ td svg {
 }
 
 
+/* JOBS PAGE */
+.jobs_title {
+    text-align: center;
+    font-size: 2.5em;
+}
 
+.card {
+    margin-bottom: 2%;
+    border: none;
+}
+
+.card-body {
+    background-color: rgba(0,0,0,.03);
+}
+
+.card:visited {
+    text-decoration: none;
+}
+
+.jobs_expand {
+    color: rgb(0,180,199);
+}
+
+.btn-link.focus, .btn-link:focus {
+    text-decoration: none;
+}
+
+
+/* Client-Page */
+
+.clients_page {
+    margin: 2% 5% 0% 5%;
+}
+
+#checklist {
+    width: 80%;
+    margin: 5% auto;
+}
+
+#checklist .left {
+    padding-right: 5%;
+}
+
+#checklist i {
+    font-size: 3em;
+    color:rgb(0, 180, 199);
+}
+
+#checklist td {
+    padding: 1.5%;
+}
+
+#client_testimonials, #clients_button {
+    padding: 5% 0%;
+    text-align: center;
+}
+
+#client_testimonials {
+    background-image: url('img/background.jpg');
+}
+
+#client_testimonials .reviews .col-4 {
+    padding: 5%;
+}
+
+#client_testimonials-1 {
+    background-color: white;
+}
+
+#client_testimonials-2 {
+    background-color: rgb(219, 219, 219);
+}
+
+#client_testimonials-3 {
+    background-color: rgb(180, 179, 179);
+}
+
+#client_testimonials h4, #client_testimonials h3  {
+    font-size: 2em;
+}
+
+#clients_button a {
+    padding: 2%;
+}
