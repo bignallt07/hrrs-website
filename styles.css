@@ -253,6 +253,15 @@ footer img {
     display: block;
 }
 
+#phone {
+    font-size: 1.5em;
+}
+
+.border-bottom {
+    border-bottom: 1px lightgrey solid;
+    padding-bottom: 5%;
+}
+
 /* JOBS */
 
 .card h2 {
@@ -337,11 +346,11 @@ footer img {
 }
 
 #block-2 {
-    background-image: url('img/stock/stock3.jpg');
+    background-image: url('img/stock/stock2.jpg');
 }
 
 #block-3 {
-    background-image: url('img/stock/stock2.jpg');
+    background-image: url('img/stock/stock3.jpg');
 }
 
 #block-4 {
