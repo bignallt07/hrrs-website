@@ -370,6 +370,24 @@ td svg {
     margin: 40px;
 }
 
+/* MEDIA PAGE */
+#media-content {
+    margin: 5%;
+    text-align: center;
+}
+
+#media-content i {
+    font-size: 20em;
+}
+
+#media-content .fa-youtube-square {
+    color: #FF0000;
+}
+
+#media-content .fa-linkedin {
+    color: #0072b1;
+}
+
 
 /* JOBS PAGE */
 .jobs_title {
@@ -433,7 +451,10 @@ td svg {
 }
 
 #client_testimonials .reviews .col-4 {
-    padding: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    min-height: 350px;
 }
 
 #client_testimonials-1 {
@@ -454,4 +475,10 @@ td svg {
 
 #clients_button a {
     padding: 2%;
+}
+
+.review {
+    color: rgb(100,99,99);
+    font-weight: bold;
+    font-size: 1.25em;
 }
