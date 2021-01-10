@@ -507,6 +507,10 @@ td svg {
     display: none;
 }
 
+#toggle, label {  /*For HBM */
+    display: none;
+}
+
 /************************************************
 * MEDIA QUERIES 
 *************************************************/  
@@ -674,7 +678,7 @@ td svg {
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     [class*="col-"] {
         width: 100%;
     }
@@ -718,7 +722,8 @@ td svg {
     }
 
     nav a {
-        font-size: 15px;
+        font-size: 1em;
+        padding: 5px;
     }
 
     /* Header */
@@ -738,14 +743,18 @@ td svg {
     /* Intro */
 
     #intro h1, #jobs h2, #candidate h1, footer h3, footer h4  {
-        font-size: 1em;
+        font-size: 1.25em;
     }
 
     #intro [class*="col-"], #jobs [class*="col-"] {
     padding: 2% 4%;
 }
 
-    p, .btn-primarys, #candidate p, footer a {
+    p, .btn-primarys, footer a {
+        font-size: 1em;
+    }
+
+    #candidate p {
         font-size: .75em;
     }
 
@@ -758,6 +767,32 @@ td svg {
         border-top: 1px solid white;
     }
 
+     label {
+        display: block;
+        cursor: pointer;
+        width: 100px;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menu a {
+        clear: right;
+        display: block;
+        border-bottom: #eaeaeb;
+        margin: 0;
+    }
+
+    #toggle:checked + .menu {
+        display: block;
+    }
+
     
 
 
@@ -766,7 +801,7 @@ td svg {
 
 
 /* Extra Large Screens */
-
+/* 
 @media only screen and (min-width: 1800px) {
   body {
     background-color: red;
@@ -774,4 +809,4 @@ td svg {
 
 
 
-}
+} */
