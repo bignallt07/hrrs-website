@@ -521,7 +521,7 @@ td svg {
 
 /* Phone */
 
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media and (min-width: 480px) and (max-width: 768px) {
     #phone-button, #role-btn, #hiring-btn {
         display: none;
     }
