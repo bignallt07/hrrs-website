@@ -14,6 +14,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* NavBar */
 
+.extra-header {
+    display: none;
+}
+
 #phone-button {
     position: fixed;
     text-align: center;
@@ -34,13 +38,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* NEW HEADER - DELETE LATER */
-#home-header2 {
-    background-image: url('img/banner.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    position: relative;
-}
 
 #home-header2 .row {
     margin: 0;
@@ -48,8 +45,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #role-btn {
     position: absolute;
-    top: 50%;
-    left: 15%;
+    top: 30%;
+    left: 20%;
     background-color: white;
     color:rgb(0, 180, 199);
     padding: 1%;
@@ -57,8 +54,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #hiring-btn {
     position: absolute;
-    top: 50%;
-    right: 15%;
+    top: 30%;
+    right: 20%;
     background-color: white;
     color:rgb(0, 180, 199);
     padding: 1%;
@@ -67,17 +64,17 @@ h1, h2, h3, h4, h5, h6 {
 #hiring-btn:hover, #role-btn:hover {
     color: white;
     background-color:rgb(0, 180, 199);
-    border: 1px solid white;
+    border: 3px solid white;
 }
 
 
 
 /* Header */
 #home-header {
-    background-image: url('img/header.jpg');
+    background-image: url('img/banner-main.jpg');
     background-size: cover;
     background-position: center;
-    padding: 4% 4% 1.5% 4%
+    padding: 4% 4% 1.5% 4%;
 }
 
 #home-header .row {
@@ -87,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 #header-content {
     margin: auto;
     text-align: center;
+    height: 350px;
 }
 
 #header-content img {
@@ -464,15 +462,19 @@ td svg {
 }
 
 #client_testimonials, #clients_button {
-    padding: 5% 0%;
+    padding: 2% 0% 5% 0%;
     text-align: center;
+}
+
+#client_testimonials h3 {
+    padding-bottom: 2%;
 }
 
 #client_testimonials {
     background-image: url('img/background.jpg');
 }
 
-#client_testimonials .reviews .col-4 {
+#client_testimonials .reviews .col-lg-4, #client_testimonials-3 {
     padding: 3%;
     display: flex;
     align-items: center;
@@ -503,4 +505,179 @@ td svg {
     color: rgb(100,99,99);
     font-weight: bold;
     font-size: 1.25em;
+}
+
+#no-jobs {
+    text-align: center;
+}
+
+#extra-buttons {
+    display: none;
+}
+
+/************************************************
+* MEDIA QUERIES 
+*************************************************/
+
+/* Phone */
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    #phone-button, #role-btn, #hiring-btn {
+        display: none;
+    }
+
+    #extra-buttons {
+        display: flex;
+        align-items: stretch;
+    }
+
+    .mob-head-btn {
+        background-color:rgb(0, 180, 199);
+        color: white;
+        width: 50%;
+        padding: 8px;
+        border: 1px solid white;
+    }
+
+    #intro h1 {
+        font-size: 1em;
+    }
+
+    /* nav a {
+        
+    } */
+
+
+
+}  
+
+/* Tablet */
+
+@media only screen and (max-width: 998px) {
+    body {
+        margin-top: 0;
+    }
+    
+    nav img, nav span, #jobs img, footer img, #client_testimonials-3
+    {
+        display: none;
+    }
+
+    .extra-header {
+        display: block;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .extra-header p {
+        color: white;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+    }
+
+    nav ul, .sub-headers nav ul {
+        float: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 20px;
+    }
+
+    /* phone button */
+    #phone-button {
+        top: 90px;
+        right: 15px;
+    }
+
+    /* Intro */
+    #intro, #jobs, footer .col-md-6, #footer-copy {
+        text-align: center;
+    }
+
+    #intro h1 {
+        font-size: 1.75em;
+    }
+
+    #intro .col-4 {
+        display: none;
+    }
+
+    #role-btn {
+        left: 3%;
+    }
+
+    #hiring-btn {
+        right: 3%;
+    }
+
+    /* testimonials */
+
+    #testimonials h2 {
+        font-size: 1.5em;
+    }
+
+    #testimonials h4 {
+        font-size: 1.25em;
+    }
+
+    .jobs-content {
+        padding-left: 0;
+    }
+
+    /* About Page */
+    .sub-headers {
+        height: 225px;
+    }
+
+    .sub-headers ul {
+        padding-left: 0;
+    }
+
+    .sub-headers h1 {
+        padding-top: 4%;
+    }
+
+    .about-main {
+        padding: 2%;
+    }
+
+    /* client and candidate */
+    #client_testimonials .col-md-6 {
+        padding: 5%;
+        min-height: 250px;
+        display: flex;
+        align-items: center;
+    }
+
+    #client_testimonials h3 {
+        font-size: 1.5em;
+    }
+
+    #client_testimonials .review {
+        font-size: 1em;
+    }
+
+    /* Jobs */
+
+    .btn-cv {
+        margin-bottom: 40px;
+    }
+
+}
+
+
+
+
+/* Extra Large Screens */
+
+@media only screen and (min-width: 1800px) {
+  body {
+    background-color: red;
+  }
+
+
 }
