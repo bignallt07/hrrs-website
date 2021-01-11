@@ -9,31 +9,33 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="framework.css">
+    <link rel="stylesheet" href="styles.css">
 
     <title>HRRS | About Us</title>
 </head>
 
 <body>
-    <header class="sub-headers">
+    <nav>
         <div class="extra-header">
             <p>HR Recruitment Solutions</p>
         </div>
-        <nav>
-            <div class="container">
-                <img src="img\logoheader.png" alt="logo">
-                <span>HR Recruitment Solutions</span>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="media.html">Media</a></li>
-                    <li><a href="client.html">Client</a></li>
-                    <li><a href="candidate.html">Candidate</a></li>
-                    <li><a href="jobs.html">Jobs</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="container">
+            <img src="img\logoheader.png" alt="logo">
+            <span>HR Recruitment Solutions</span>
+            <label for="toggle">&#9776; Menu</label> <!-- Important - HBM -->
+            <input type="checkbox" id="toggle" />
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="client.html">Client</a></li>
+                <li><a href="candidate.html">Candidate</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="sub-headers">
         <div>
             <h1>About Us</h1>
         </div>
@@ -43,7 +45,7 @@
     <main class="about-main">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-sm">
                     <div class="about-content">
                         <h2>What we do?</h2>
                         <p>HR Recruitment Solutions provide a supportive process for clients and candidates alike, matching skills aspirations and styles to allow both the employee and employer to thrive.
@@ -54,7 +56,7 @@
             </div>
             <div class="row">
                 <div id="block-2" class="col-6 block"></div>
-                <div class="col-lg-6 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="about-content">
                         <h2>Why?</h2>
                         <p>Building on our founders’ experience of working with HR professionals from CHROs of blue chip multinationals to HR administrators of localised SMEs, HR Recruitment Solutions was set up to be more than just another recruitment company.
@@ -63,7 +65,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="about-content">
                         <h3>How?</h3>
                         <p>By adding value beyond the norm and positioning themselves as a key strategic recruitment partner, HR Recruitment
@@ -74,7 +76,7 @@
             </div>
             <div class="row">
                 <div id="block-4" class="col-6 block"></div>
-                <div class="col-lg-6 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="about-content">
                         <h3>Founder - Leon Morley</h3>
                         <p>Its founder, Leon Morley approached his career in a different way to the ‘average’ recruiter. Leon progressed in his recruitment career by focusing on pursuing long-term relationships as a trusted partner to businesses and HR
@@ -95,7 +97,7 @@
                 <div class="col-lg-5">
                     <img src="img/logo.png" alt="logo">
                 </div>
-                <div id="site-map" class="col-lg-4 col-md-6 col-sm-6">
+                <div id="site-map" class="col-lg-4 col-md-6 col-sm">
                     <h3>Site Map</h3>
                     <a href="index.html">Home</a>
                     <a href="about-us.html">About Us</a>
@@ -105,7 +107,7 @@
                     <a href="candidate.html">Candidate</a>
                     <a href="privacy-policy.html">Privacy Policy</a>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm">
                     <h3>Contact Us</h3>
                     <div class="footer_contact border-bottom">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone-fill"

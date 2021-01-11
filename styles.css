@@ -296,7 +296,7 @@ footer img {
 
 .sub-headers {
     background-color: rgb(0,180,199);
-    height: 300px;
+    height: 250px;
 }
 
 .sub-headers h1 {
@@ -306,8 +306,8 @@ footer img {
     text-align: center;
 }
 
-.sub-headers nav {
-    box-shadow: 0 4px 10px -6px #505050;
+.sub-headers {
+    box-shadow: 0 -3px 10px -6px #505050;
 }
 
 .sub-main {
@@ -337,7 +337,7 @@ footer img {
     padding: 0 10px;
 }
 
-.about-main .col-6 {
+.about-main .col-lg-6 {
     display: flex;
     align-items: center;
     min-height: 400px;
@@ -373,6 +373,7 @@ footer img {
 .about-content {
     padding: 10%;
 }
+
 
 .about-main img {
     width: 100%;
@@ -537,12 +538,15 @@ td svg {
         color: white;
         border-bottom: 1px solid white;
         padding-bottom: 10px;
+        margin-bottom: 0;
     }
 
     nav ul, .sub-headers nav ul {
         float: none;
         display: flex;
         justify-content: center;
+        margin-top: 0;
+        padding-top: 10px;
     }
 
     nav a {
@@ -594,7 +598,7 @@ td svg {
 
     /* About Page */
     .sub-headers {
-        height: 225px;
+        height: 150px;
     }
 
     .sub-headers ul {
@@ -602,7 +606,7 @@ td svg {
     }
 
     .sub-headers h1 {
-        padding-top: 4%;
+        padding-top: 2%;
     }
 
     .about-main {
@@ -635,8 +639,8 @@ td svg {
 
 /* Phone */
 
-@media only screen and (min-width: 499px) and (max-width: 768px) {
-    #phone-button, #role-btn, #hiring-btn, .block, #block-1, #block-2, #block-3, #block-4, #client_testimonials {
+@media only screen and (min-width: 499px) and (max-width: 775px) {
+    #phone-button, #role-btn, #hiring-btn, .block, #block-1, #block-2, #block-3, #block-4, #client_testimonials, #testimonials {
         display: none;
     }
 
@@ -668,7 +672,7 @@ td svg {
     }
 
     .about-content {
-        border: 1px solid white;
+        border-bottom: 1px solid white;
         margin: 5px 0;
     }
 
@@ -683,7 +687,7 @@ td svg {
         width: 100%;
     }
 
-    #phone-button, #role-btn, #hiring-btn, .block, #block-1, #block-2, #block-3, #block-4, #client_testimonials, #testimonials, #site-map, footer svg {
+    #phone-button, #role-btn, #hiring-btn, .block, #block-1, #block-2, #block-3, #block-4, #client_testimonials, #testimonials, #site-map, footer svg, #checklist .left {
         display: none;
     }
 
@@ -712,7 +716,7 @@ td svg {
         margin-top: 0;
     }
 
-    nav li:nth-child(even) {
+    nav li:nth-child(odd) {
         background-color:rgb(2, 190, 211);
     }
 
@@ -755,7 +759,7 @@ td svg {
     }
 
     #candidate p {
-        font-size: .75em;
+        font-size: 1em;
     }
 
     footer {
@@ -772,6 +776,7 @@ td svg {
         cursor: pointer;
         width: 100px;
         margin: 0 auto;
+        padding: 5px;
         text-align: center;
         color: white;
     }
@@ -789,11 +794,64 @@ td svg {
         margin: 0;
     }
 
-    #toggle:checked + .menu {
+    #toggle:checked + .menu{
         display: block;
     }
 
-    
+    .sub-headers {
+        height: 100px;
+    }
+
+    /* About us */
+    .block {
+        border-bottom: 1px solid white;
+    }
+
+    .about-content {
+        padding: 0px;
+        border-bottom: none;
+    }
+
+    .about-main .col-lg-6 {
+        min-height: 200px;
+        padding: 20px;
+        border-bottom: 1px solid white;
+    }
+
+    /* Client/Candidate Page */
+    #checklist tr:nth-child(odd) {
+        background-color: rgb(0, 180, 199);
+        color: white;
+    }
+
+    #checklist tr:nth-child(even) {
+        color: rgb(0, 180, 199);
+        background-color: white;
+        border: 1px solid rgb(0, 180, 199);
+    }
+
+    #checklist td {
+        padding: 10px;
+    }
+
+    #checklist {
+        margin: 0 0 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-cv {
+        margin: 0;
+    }
+
+    .jobcaption {
+        text-align: center;
+    }
+
+    #privacy-policy {
+        font-size: 3.5em;
+    }
+
 
 
 }
