@@ -403,17 +403,15 @@ td svg {
     text-align: center;
 }
 
+#media-content h5 {
+    color: rgb(100,99,99);
+}
+
 #media-content i {
     font-size: 20em;
+    color:rgb(0, 180, 199);
 }
 
-#media-content .fa-youtube-square {
-    color: #FF0000;
-}
-
-#media-content .fa-linkedin {
-    color: #0072b1;
-}
 
 
 /* JOBS PAGE */
