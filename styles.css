@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #role-btn {
     position: absolute;
-    top: 30%;
+    top: 250px;
     left: 20%;
     background-color: white;
     color:rgb(0, 180, 199);
@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hiring-btn {
     position: absolute;
-    top: 30%;
+    top: 250px;
     right: 20%;
     background-color: white;
     color:rgb(0, 180, 199);
@@ -104,8 +104,10 @@ nav img {
     padding: 3% 8%;
 }
 
+
 #intro img {
     margin: auto;
+    padding-top: 15%;
     width: 100%;
 }
 
@@ -201,13 +203,13 @@ nav img {
     margin-top: 2%;
 }
 
-#testimonials h2, #testimonials h4 {
+#testimonials h2, #testimonials h5 {
     color: white;
     text-align: center;
 }
 
 #testimonials p {
-    color: white;
+    color: rgb(100,99,99);
 }
 
 #testimonials .col-3 {
@@ -224,6 +226,8 @@ nav img {
 }
 
 /* footer */
+
+
 footer {
     background-color: rgb(0,180,199);
     padding: 50px 10px 10px 10px;
@@ -267,12 +271,17 @@ footer img {
 }
 
 #phone {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .border-bottom {
     border-bottom: 1px lightgrey solid;
     padding-bottom: 5%;
+}
+
+.fa-envelope {
+    margin-right: 2px;
+    margin-top: 5px;
 }
 
 /* JOBS */
@@ -367,7 +376,10 @@ footer img {
 }
 
 #block-4 {
-    background-image: url('img/stock/stock7.jpg');
+    background-image: url('img/leonmorley.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: grey;
 }
 
 
@@ -471,7 +483,8 @@ td svg {
 #client_testimonials .reviews .col-lg-4, #client_testimonials-3 {
     padding: 3%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
     min-height: 350px;
 }
 
@@ -503,6 +516,7 @@ td svg {
 
 #no-jobs {
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .extra-buttons {
@@ -576,10 +590,12 @@ td svg {
     }
 
     #role-btn {
+        top: 230px;
         left: 3%;
     }
 
     #hiring-btn {
+        top: 230px;
         right: 3%;
     }
 
@@ -667,7 +683,7 @@ td svg {
         padding-top: 20px;
     }
 
-    #testimonials h4 {
+    #testimonials h5 {
         font-size: .5em;
         color: white;
     }
@@ -743,6 +759,7 @@ td svg {
 
     #header-content {
         height: 200px;
+        position: relative;
     }
 
     /* Intro */
@@ -857,15 +874,34 @@ td svg {
 
 }
 
+/* Floating buttons */
+@media only screen and (min-width: 999px) and (max-width: 1330px) {
+    #role-btn {
+        left: 10%;
+    }
+
+    #hiring-btn {
+        right: 10%;
+    }
+}
+
 
 
 /* Extra Large Screens */
-/* 
+
 @media only screen and (min-width: 1800px) {
-  body {
-    background-color: red;
+  #header-content {
+    height: 450px;
   }
 
+  #role-btn {
+    top: 300px;
+}
+
+#hiring-btn {
+    top: 300px;
+}
 
 
-} */
+
+}
