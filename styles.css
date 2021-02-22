@@ -295,13 +295,12 @@ footer img {
     text-decoration: none;
 }
 
-.card:hover {
-    color: red;
-}
 
 .card p {
     color: rgb(56, 56, 56);
 }
+
+
 
 /* SUBPAGES */
 
