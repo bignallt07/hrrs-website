@@ -102,7 +102,7 @@ nav img {
 }
 
 #intro h1 {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 #intro [class*="col-lg"] {
@@ -316,12 +316,15 @@ footer img {
 .sub-headers {
     background-color: rgb(0,180,199);
     height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .sub-headers h2 {
     color: white;
     font-size: 4em;
-    padding-top: 5%;
+    /* padding-top: 5%; */
     text-align: center;
 }
 
@@ -406,8 +409,7 @@ td svg {
 }
 
 /* MEDIA PAGE */
-#media-content {
-    margin: 5%;
+#social {
     text-align: center;
 }
 
@@ -416,7 +418,7 @@ td svg {
 }
 
 #media-content i {
-    font-size: 20em;
+    font-size: 4em;
     color:rgb(0, 180, 199);
 }
 
@@ -534,6 +536,71 @@ td svg {
     display: none;
 }
 
+/* blog pages */
+#blog .container {
+    padding: 3% 10%;
+}
+
+#blog strong {
+    color:rgb(0, 179, 199);
+    font-size: larger;
+}
+
+#blog-setup .container {
+    padding: 3% 8%;
+}
+
+#blog-setup h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#blog-setup .entry {
+    border-bottom: 1px solid rgb(0, 179, 199);
+    padding: 2% 0;
+}
+
+#blog-setup .col-4 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+#blog-setup .col-8 {
+    padding-top: 4%;
+}
+
+#blog p {
+    margin-bottom: 2.5%;
+}
+
+#blog li {
+    margin-bottom: 1.5%;
+}
+
+.entry img {
+    width: 100%;
+    align-self: center;
+}
+
+/* Hosting */
+#main-show iframe {
+    width: 854px; 
+    height: 480px; 
+}
+
+#previous iframe {
+    width: 100%;
+}
+
+#st-1 {
+    margin-bottom: 10px;
+}
+
+
+
+
 /************************************************
 * MEDIA QUERIES 
 *************************************************/  
@@ -589,7 +656,7 @@ td svg {
     }
 
     #intro h1 {
-        font-size: 1.5em;
+        font-size: 1.25em;
     }
 
     #intro .col-2 {
@@ -631,6 +698,7 @@ td svg {
 
     .sub-headers h2 {
         padding-top: 2%;
+        font-size: 3em;
     }
 
     .about-main {
@@ -659,6 +727,12 @@ td svg {
         margin-bottom: 40px;
     }
 
+    /* Hosting Vid */
+    #main-show iframe {
+        width: 560px; 
+        height: 340px; 
+    }
+
 }
 
 /* Phone */
@@ -682,7 +756,7 @@ td svg {
     }
 
     #intro h1 {
-        font-size: 1.25em;
+        font-size: 1em;
     }
 
     nav a {
@@ -702,6 +776,11 @@ td svg {
 
     .jobcaption {
         text-align: center;
+    }
+
+    #main-show iframe {
+        width: 320px; 
+        height: 240px; 
     }
 
 }
@@ -825,6 +904,7 @@ td svg {
 
     .sub-headers {
         height: 100px;
+        font-size: .7em;
     }
 
     /* About us */
