@@ -321,7 +321,7 @@ footer img {
     justify-content: center;
 }
 
-.sub-headers h2 {
+.sub-headers h1 {
     color: white;
     font-size: 4em;
     /* padding-top: 5%; */
@@ -550,10 +550,11 @@ td svg {
     padding: 3% 8%;
 }
 
-#blog-setup h2 {
+#blog-header {
     text-align: center;
     text-decoration: underline;
 }
+
 
 #blog-setup .entry {
     border-bottom: 1px solid rgb(0, 179, 199);
@@ -696,7 +697,7 @@ td svg {
         padding-left: 0;
     }
 
-    .sub-headers h2 {
+    .sub-headers h1 {
         padding-top: 2%;
         font-size: 3em;
     }

@@ -8,11 +8,11 @@ for (let i = 0; i < blogs.length; i++) {
     div.innerHTML = `
         <div class="row">
             <div class="col-4">
-                <img src=${blogs[i].thumbnail} alt="Blog Thumbnail">
+                <img src=${blogs[i].thumbnail} alt="${blogs[i].alt}">
                 <p>Author: ${blogs[i].author}</p>
             </div>
             <div class="col-8">
-                <h3>${blogs[i].title}</h3>
+                <h2>${blogs[i].title}</h2>
                 <div class="paragraphs">
                 <p>${blogs[i].bio.one}</p>
                 <p>${blogs[i].bio.two}</p>
